@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vann Advisory</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Techie - v4.3.0
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<header>
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+      </div>
+
+    </div>
+  </main>
+</header>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="#hero">THEFINTIP</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Top Picks</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>NO MORE STUMBLING BLOCKS WHILE INVESTING.</h1>
+          <h2> Personal Finance made easy! </h2>
+          <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="static/img/inv.jpg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      
+      <div class="container">
+        
+        <div class="row-image">
+          <div>
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+              <img src="static/img/usabt.jpg" class="img-flu" alt="">
+          </div>
+          
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>About Us</h3>
+            <p class="fst-italic">
+              We at TheFinTip provide you with the best solutions for your Personal Portfolio Management with a fundamental and data driven approach which connects millions of data points to give you the best suggestions without any human bias.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <b>Neutral</b> - Not a broker, hence no interest in earning from your transcations </li>
+              <li><i class="bi bi-check-circle"></i><b>AI driven with no human biases</b></li>
+              <li><i class="bi bi-check-circle"></i> <b>75% Success Rate</b></li>
+            </ul>
+            <!-- <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a> -->
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>PROFESSIONAL SERVICES</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center" style="padding-top: 43px;">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100" style="padding-right: 48px;">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Model Portfolios</h4>
+              <p>Conservative, Moderate and Aggressive</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Portfolio Optimization</h4>
+              <p>Whatever current portfolio you have, we advise</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300" style="padding-left: 51px;" >
+              <i class="bx bx-cube-alt"></i>
+              <h4>Stock of the month</h4>
+              <p>Handpicked investment ideas by our team every month</p>
+            </div>
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100" style="padding-right: 48px;">
+            <img src="static/img/services1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I was very confused regarding my own needs and had consulted a lot of consultants. One of my friends suggested me TheFinTip. They gave a very fresh perspective and took the time to understand my needs and provide a customized solution. The services offered by them are splendid and very unique from the rest of the market. 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Harsh Nyati</h3>
+                <h4>Photographer, Influencer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I was not sure about how to invest and most importantly where to invest in the stock market and the importance of my financial goals. TheFinTip explained about these things with deep analysis and they gave me a personalized portfolio according to my case rather than forcing a pre-determined portfolio.   
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-2.jpeg" class="testimonial-img" alt="">
+                <h3>Anuraj</h3>
+                <h4>Manager, ICICI Bank</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The guys at TheFinTip were as concerned and sensitive as I was about my needs. They clearly explained their pieces of advice with explanations via visual charts and data which shows their understandings of the market and helped me to create a portfolio of my desire.
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-3.jpeg" class="testimonial-img" alt="">
+                <h3>Abhishant</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  If you are looking to understand the basic financial terms, TheFinTip guys are your go-to people. They are very approachable at any point in time and will always be there to help you with your queries. They show their commitment and knowledge of the financial world. I would never hesitate to recommend TheFinTip to anyone. 
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-4.jpeg" class="testimonial-img" alt="">
+                <h3>Amit</h3>
+                <h4>Student</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I was never able to give attention to my finances because of my busy schedule, so I never invested my money and was not getting returns according to my hopes but after I met with The FinTip I'm able to invest with my busy schedule as they have guided me and gave me the confidence to invest backing with solid research. 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-5.jpeg" class="testimonial-img" alt="">
+                <h3>Vineet</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>TOP PICKS</h2>
+          <p>For this quater, we have handpicked a few stocks that can see a upside of about 25% or more</p>
+        </div>
+        <div class ="table-div">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Sector</th>
+                <th scope="col">Cap</th>
+                <th scope="col">1 Month return</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>J Kumar Infraprojects Ltd</td>
+                <td>Construction & Engineering</td>
+                <td>Small Cap</td>
+                <td>13.07%</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Dodla Dairy Ltd</td>
+                <td>FMCG - Foods</td>
+                <td>Small Cap</td>
+                <td>10%</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Rama Phosphates Ltd</td>
+                <td>Fertilizers</td>
+                <td>Small Cap</td>
+                <td>46.75%</td>
+
+              </tr>
+            </tbody>
+          </table>
+          <p style="text-align: center; color: red;">To know more, please contact us below.</p>
+        </div>
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>For any queries related to your current portfolio or Want us to design a portfolio for you? <br> Get in touch!!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>F-3, Plot no. 276,Nirman Nagar AB</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>vannadvisories@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+91 9851889036</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.5980438631836!2d75.74510731478105!3d26.8845089831397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUzJzA0LjIiTiA3NcKwNDQnNTAuMyJF!5e0!3m2!1sen!2sin!4v1623753379462!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6">
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form> -->
+            <form method="POST" action="{{ url_for('queries') }}">
+              {{ qform.hidden_tag() }}
+              <div class="form-group">
+                  {{ qform.name.label(class='form-control-label')}}
+                  {% if qform.name.errors %}
+                      {{ qform.name(class="form-control is-invalid") }}
+                      <div class="invalid-feedback">
+                          {% for error in qform.name.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{ qform.name(class="form-control") }}
+                  {% endif %}
+              </div>
+              <div class="form-group">    
+                  {{ qform.email.label(class='form-control-label')}}
+                  {% if qform.email.errors %}
+                      {{ qform.email(class="form-control is-invalid") }}
+                      <div class="invalid-feedback">
+                          {% for error in qform.email.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{ qform.email(class="form-control") }}
+                  {% endif %}
+              </div>
+              <!-- <div class="col-md-6 form-group mt-3 mt-md-0">
+                  {{ qform.email.label(class='form-control-label')}}
+                  {% if qform.email.errors %}
+                      {{ qform.email(class="form-control is-invalid") }}
+                      <div class="invalid-feedback">
+                          {% for error in qform.email.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{ qform.email(class="form-control") }}
+                  {% endif %}
+              </div> -->
+              <div class="form-group mt-3">
+                  {{ qform.subject.label(class='form-control-label')}}
+                  {% if qform.subject.errors %}
+                      {{ qform.subject(class="form-control is-invalid") }}
+                      <div class="invalid-feedback">
+                          {% for error in qform.subject.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{ qform.subject(class="form-control") }}
+                  {% endif %}
+              </div>
+              <div class="form-group">
+                  {{ qform.message.label(class='form-control-label')}}
+                  {% if qform.message.errors %}
+                      {{ qform.message(class="form-control is-invalid") }}
+                      <div class="invalid-feedback">
+                          {% for error in qform.message.errors %}
+                              <span>{{ error }}</span>
+                          {% endfor %}
+                      </div>
+                  {% else %}
+                      {{ qform.message(class="form-control") }}
+                  {% endif %}
+              </div>
+              <div class="register-fields">
+                  {{ qform.submit(class='submit-class') }}
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>VANN Advisors</h3>
+            <p>
+              F-3, Plot no. 276,
+              Nirman Nagar AB, Shyam Nagar, Jaipur- 302019<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 9851889036<br>
+              <strong>Email:</strong> vannadvisories@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#features">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Terms of service</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Get to know out latest products and market analysis</p>
+            <!-- <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form> -->
+            <form method="POST" action="{{ url_for('subs') }}">
+              {{ sform.hidden_tag() }}
+              <div class="form-group" style="margin-bottom: 25px;">
+                {{ sform.email.label(class='form-control-label')}}
+                {% if sform.email.errors %}
+                    {{ sform.email(class="form-control is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in sform.email.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ sform.email(class="form-control") }}
+                {% endif %}
+              </div>
+              <div class="subscribe-fields">
+                  {{ sform.submit(class='submit-class') }}
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
